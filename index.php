@@ -47,19 +47,6 @@
     </head>
     <body>
     	     <input name="search"type="text" placeholder="Search Query..." id="searchBox">
-        
-    	
-
-    	<?php
-    		
-    		
-
-    		
-    	?>
-
-    	
-    	
-			
    
         <div id="response"></div>
 
@@ -82,8 +69,9 @@
                                     search: 1,
                                     q: query
 
-                                },
-                                success: function (data) {
+                            },
+                                success: function (data) 
+                                {
                                     $("#response").html(data);
                                     
                                 },
