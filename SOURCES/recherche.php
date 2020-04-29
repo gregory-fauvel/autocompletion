@@ -26,7 +26,7 @@ if (isset($_GET['search']))
 			$kiki=$data['nom'];
 			$kiki2=$data['id'];
 			?>
-			<p><a href='SOURCES/element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p>
+			<p><a href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p>
 			<?php
 			
 		
