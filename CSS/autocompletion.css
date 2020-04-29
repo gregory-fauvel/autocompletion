@@ -1,0 +1,52 @@
+/*index*/
+            ul {
+                float: left;
+                list-style: none;
+                padding: 0px;
+                border: 1px solid black;
+                margin-top: 0px;
+            }
+
+            input, ul {
+                width: 250px;
+            }
+
+            li:hover {
+                color: silver;
+                background: #0088cc;
+            }
+
+/*element*/
+
+    #bodyE{
+        background-size: cover;
+        background-image: url("https://image.shutterstock.com/image-vector/old-cinema-background-vector-illustration-260nw-770497021.jpg");
+    }
+
+    #headerelement{
+        background-color: red;
+        min-height: 125px;
+    }
+
+    .H1element{
+        text-align: center;
+        font-family: serif;
+        font-size: 60px;
+        color:#b1b1ff;
+
+    }
+
+    #totalE{
+    background-color: #c2ceff6b;
+    height: 450px;
+    width: 450px;
+    text-align: center;
+    margin-left: 40%;
+    border: solid 10px #1d7196;
+    }
+
+    .pE{
+        font-size: 55px;
+        color: #b1b1ff;
+
+    }
