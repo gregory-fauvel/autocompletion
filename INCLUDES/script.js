@@ -8,7 +8,7 @@ $(document).ready(function () {
                     if (query.length > 0) {
                         $.ajax(
                             {
-                                url: 'index.php',
+                                url: '../INCLUDES/research.php',
                                 method: 'GET',
                                 data: {
                                     search: 1,

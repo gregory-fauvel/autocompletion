@@ -15,9 +15,20 @@ if (isset($_GET['id'])) {
 	<link rel="stylesheet" type="text/css" href="../CSS/autocompletion.css">
 </head>
 <body id="bodyE">
-	<header id="headerelement">
+	        <header>
 
-	</header>
+            </form>
+        <input name="search"type="text" placeholder="Search Query..." id="searchBox">
+   
+        <div id="response"></div>
+
+        	<script type="text/javascript">
+            <?php
+           	include("../INCLUDES/script.js");
+           
+           		?>
+        	</script> 
+        </header>
 <main>
 
 		<H1 class="H1element">Fiche du film : <?php echo $req['nom']?></H1>

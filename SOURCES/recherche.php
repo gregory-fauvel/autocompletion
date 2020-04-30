@@ -8,6 +8,20 @@
         </script>
 </head>
 <body>
+	        <header>
+
+            </form>
+        <input name="search"type="text" placeholder="Search Query..." id="searchBox">
+   
+        <div id="response"></div>
+
+        	<script type="text/javascript">
+            <?php
+           	include("../INCLUDES/script.js");
+           
+           		?>
+        	</script> 
+        </header>
 
 </body>
 </html>
