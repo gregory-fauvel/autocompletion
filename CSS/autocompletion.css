@@ -19,9 +19,10 @@
 /*element*/
 
     #bodyE{
-        background-size: cover;
-        background-image: url("https://image.shutterstock.com/image-vector/old-cinema-background-vector-illustration-260nw-770497021.jpg");
-    }
+       background-image: url(../UPLOAD/cinama.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
 
     #headerelement{
         background-color: red;
@@ -49,4 +50,52 @@
         font-size: 55px;
         color: #b1b1ff;
 
+    }
+
+
+    /*recherche*/
+
+    #bodyrecherche{
+        background-image: url("https://images.vexels.com/media/users/3/71964/preview2/20d1e8ce966a96f29d52371ded3eb92a-creative-3d-film-strip-background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    #lien{
+    background-color: #dad0d059;
+    border: solid 5px #7a7772;
+    color: white;
+    font-size: 25px;
+    height: 532px;
+    width: 458px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 153px;
+    align-items: center;
+
+        }
+    
+
+    .pRE{
+        font-size: 25px;
+        font-family: bold;
+    }
+
+    .ARE{
+    color: #000000;
+    font-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    }
+
+    #H1RE{
+    color: #a26666;
+    font-family: fantasy;
     }
