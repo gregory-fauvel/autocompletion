@@ -1,0 +1,164 @@
+/*header*/
+
+header{
+ 
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+    
+
+/*thoni*/
+
+/*element*/
+
+    #bodyE{
+       background-image: url("https://www.publicdomainpictures.net/pictures/80000/velka/scratched-film-strip-background.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+
+    #headerelement{
+        background-color: red;
+        min-height: 125px;
+    }
+
+    .H1element{
+        text-align: center;
+        font-family: serif;
+        font-size: 60px;
+        color:#3b3b42;
+
+    }
+
+    #totalE{
+    background-color: #c2ceff6b;
+    height: 450px;
+    width: 450px;
+    text-align: center;
+    margin-left: 40%;
+    border: solid 10px #1d7196;
+    }
+
+    .pE{
+        font-size: 55px;
+        color: #3b3b42;
+
+    }
+
+
+    /*recherche*/
+
+    #bodyrecherche{
+        background-image: url("../UPLOAD/cine.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    #lien{
+    background-color: #dad0d059;
+    border: solid 5px #7a7772;
+    color: white;
+    font-size: 25px;
+    height: 532px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 104px;
+    flex-wrap: wrap;
+
+        }
+    
+
+#separ{
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    background-color: #debfbf6e;
+    width: 177px;
+}
+    .pRE{
+        font-size: 25px;
+        font-family: bold;
+    }
+
+    .ARE{
+    color: #000000;
+    font-style: none;
+    text-decoration: none;
+    font-size: 25px;
+    }
+
+    #H1RE{
+    color: #a26666;
+    font-family: fantasy;
+    }
+
+    /*index*/
+#index{
+    background-image: url(../UPLOAD/cine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#moteur2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height : 772px;
+}
+.title{
+    text-align: center;
+    color: white;
+}
+
+
+ul {
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+    }
+
+input{
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    font-size: 25px;
+    }
+
+input, ul {
+    width: 450px;
+    height: 50px;
+    }
+
+li:hover {
+    color: silver;
+    background: grey;
+    }
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+            }
+ 
+
