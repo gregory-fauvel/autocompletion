@@ -1,3 +1,20 @@
+/*header*/
+header{
+    background-image: url(../UPLOAD/headrech.jpg);
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#response{
+    background-color: grey;
+    height: 450px;
+
+}
 /*index*/
             ul {
                 float: left;
@@ -19,7 +36,7 @@
 /*element*/
 
     #bodyE{
-       background-image: url(../UPLOAD/cinama.jpg);
+       background-image: url("https://www.publicdomainpictures.net/pictures/80000/velka/scratched-film-strip-background.jpg");
        background-repeat: no-repeat;
        background-size: cover;
    }
@@ -33,7 +50,7 @@
         text-align: center;
         font-family: serif;
         font-size: 60px;
-        color:#b1b1ff;
+        color:#3b3b42;
 
     }
 
@@ -48,7 +65,7 @@
 
     .pE{
         font-size: 55px;
-        color: #b1b1ff;
+        color: #3b3b42;
 
     }
 
@@ -77,8 +94,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 153px;
     align-items: center;
+    margin-top: 104px;
 
         }
     

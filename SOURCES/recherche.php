@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../CSS/autocompletion">
 </head>
 <body id="bodyrecherche">
-	        <header id="headerRE">
+	        <header>
 
             </form>
         <input name="search"type="text" placeholder="Search Query..." id="searchBox">
@@ -36,6 +36,31 @@ if (isset($_GET['search']))
 
 
 		$sql = $connection->query("SELECT * FROM film WHERE nom LIKE'$q%'");
+		$i=0;
+		echo" <section id='lien'>";
+		echo "<h1 id='H1RE'>Resultat de votre recherche</h1>";
+
+		while ($data = $sql->fetch_assoc()) {
+			$kiki=$data['nom'];
+			$kiki2=$data['id'];
+			?>
+			<p class="pRE"><a class="ARE" href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p>
+			<?php
+			
+		
+		$i++;	
+		}
+		echo"</section>";
+}
+
+
+if (isset($_GET['search2']))
+{
+	$connection = new mysqli('localhost', 'root', '', 'autocompletion');
+		$q = $connection->real_escape_string($_GET['search2']);
+
+
+		$sql = $connection->query("SELECT * FROM film WHERE type LIKE'$q%'");
 		$i=0;
 		echo" <section id='lien'>";
 		echo "<h1 id='H1RE'>Resultat de votre recherche</h1>";
