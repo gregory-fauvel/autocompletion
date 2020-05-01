@@ -10,8 +10,9 @@
     <body id="index">
         <header>
 
-            </form>
+            
         <input name="search"type="text" placeholder="Recherche films..." id="searchBox">
+        <a id="home" href="../index.php">Accueil</a>
    
         <div id="response"></div>
 

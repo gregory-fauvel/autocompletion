@@ -1,20 +1,16 @@
 /*header*/
+
 header{
-    background-image: url(../UPLOAD/headrech.jpg);
+ 
     width: 100%;
-    height: 300px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
+}
     
 
-}
-#response{
-    background-color: grey;
-    height: 450px;
-
-}
 /*index*/
             ul {
                 float: left;
@@ -73,7 +69,7 @@ header{
     /*recherche*/
 
     #bodyrecherche{
-        background-image: url("https://images.vexels.com/media/users/3/71964/preview2/20d1e8ce966a96f29d52371ded3eb92a-creative-3d-film-strip-background.jpg");
+        background-image: url("../UPLOAD/cine.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -90,16 +86,26 @@ header{
     color: white;
     font-size: 25px;
     height: 532px;
-    width: 458px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 104px;
+    flex-wrap: wrap;
 
         }
     
 
+#separ{
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    background-color: #debfbf6e;
+    width: 177px;
+}
     .pRE{
         font-size: 25px;
         font-family: bold;

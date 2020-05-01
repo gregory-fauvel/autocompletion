@@ -12,8 +12,9 @@
 	        <header>
 
             </form>
+
         <input name="search"type="text" placeholder="Search Query..." id="searchBox">
-   
+           
         <div id="response"></div>
 
         	<script type="text/javascript">
@@ -21,7 +22,9 @@
            	include("../INCLUDES/script.js");
            
            		?>
-        	</script> 
+        	</script>
+        	<a id="home" href="../index.php">Accueil</a>
+
         </header>
 
 </body>
@@ -37,14 +40,15 @@ if (isset($_GET['search']))
 
 		$sql = $connection->query("SELECT * FROM film WHERE nom LIKE'$q%'");
 		$i=0;
-		echo" <section id='lien'>";
 		echo "<h1 id='H1RE'>Resultat de votre recherche</h1>";
+		echo" <section id='lien'>";
+		
 
 		while ($data = $sql->fetch_assoc()) {
 			$kiki=$data['nom'];
 			$kiki2=$data['id'];
 			?>
-			<p class="pRE"><a class="ARE" href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p>
+			<div id="separ"><p class="pRE"><a class="ARE" href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p></div>
 			<?php
 			
 		
@@ -62,14 +66,15 @@ if (isset($_GET['search2']))
 
 		$sql = $connection->query("SELECT * FROM film WHERE type LIKE'$q%'");
 		$i=0;
-		echo" <section id='lien'>";
 		echo "<h1 id='H1RE'>Resultat de votre recherche</h1>";
+		echo" <section id='lien'>";
+		
 
 		while ($data = $sql->fetch_assoc()) {
 			$kiki=$data['nom'];
 			$kiki2=$data['id'];
 			?>
-			<p class="pRE"><a class="ARE" href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p>
+			<div id="separ"><p class="pRE"><a class="ARE" href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p></div>
 			<?php
 			
 		

@@ -17,10 +17,13 @@ if (isset($_GET['id'])) {
 <body id="bodyE">
 	        <header>
 
-            </form>
+           
+
         <input name="search"type="text" placeholder="Search Query..." id="searchBox">
    
         <div id="response"></div>
+        <a id="home" href="../index.php">Accueil</a>
+
 
         	<script type="text/javascript">
             <?php
