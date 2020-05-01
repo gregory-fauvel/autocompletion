@@ -1,5 +1,5 @@
 <?php
-	  // include("INCLUDES/research.php");
+      // include("INCLUDES/research.php");
 ?>
 <html>
     <head>
@@ -8,30 +8,36 @@
          <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     </head>
     <body id="index">
-        <header>
-
-            </form>
+        <header> 
+        
         <input name="search"type="text" placeholder="Recherche films..." id="searchBox">
    
         <div id="response"></div>
-
-
-
         </header>
+
+
+
+        <main id="moteur2">
+            <div>
+                
+            </div>
+
          <h1 class="title">Le moteur de recherche du cinéma</h1>
 
-             </form>
-        <input name="search"type="text" placeholder="Recherche films..." id="searchBox">
+             
+        <input name="search"type="text" placeholder="Recherche par type" id="searchBox2">
    
-        <div id="response"></div>
+        <div id="response2"></div>
 
 
 
         <script type="text/javascript">
             <?php
            include("../INCLUDES/script.js");
+
            
            ?>
         </script> 
+        </main>
     </body>
 </html>

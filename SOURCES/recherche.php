@@ -1,18 +1,20 @@
 
 <html>
-	<head>
-		<title>recherche</title>
-		<link rel="stylesheet" type="text/css" href="../CSS/autocompletion.css">
-	  	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<head>
+	<title>recherche</title>
+	  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script.js">
+  
         </script>
-	</head>
-		<body id="recherche">
+        <link rel="stylesheet" type="text/css" href="../CSS/autocompletion">
+</head>
+<body id="bodyrecherche">
 	        <header>
 
             </form>
-        		<input name="search"type="text" placeholder="Search Query..." id="searchBox">
-   				<div id="response"></div>
+        <input name="search"type="text" placeholder="Search Query..." id="searchBox">
+   
+        <div id="response"></div>
 
         	<script type="text/javascript">
             <?php
@@ -35,15 +37,44 @@ if (isset($_GET['search']))
 
 		$sql = $connection->query("SELECT * FROM film WHERE nom LIKE'$q%'");
 		$i=0;
+		echo" <section id='lien'>";
+		echo "<h1 id='H1RE'>Resultat de votre recherche</h1>";
+
 		while ($data = $sql->fetch_assoc()) {
 			$kiki=$data['nom'];
 			$kiki2=$data['id'];
 			?>
-			<p><a href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p>
+			<p class="pRE"><a class="ARE" href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p>
 			<?php
 			
 		
 		$i++;	
 		}
+		echo"</section>";
+}
+
+
+if (isset($_GET['search2']))
+{
+	$connection = new mysqli('localhost', 'root', '', 'autocompletion');
+		$q = $connection->real_escape_string($_GET['search2']);
+
+
+		$sql = $connection->query("SELECT * FROM film WHERE type LIKE'$q%'");
+		$i=0;
+		echo" <section id='lien'>";
+		echo "<h1 id='H1RE'>Resultat de votre recherche</h1>";
+
+		while ($data = $sql->fetch_assoc()) {
+			$kiki=$data['nom'];
+			$kiki2=$data['id'];
+			?>
+			<p class="pRE"><a class="ARE" href='element.php?id=<?php echo $data['id']; ?>'><?php echo $data['nom']; ?></a></p>
+			<?php
+			
+		
+		$i++;	
+		}
+		echo"</section>";
 }
 
